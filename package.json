@@ -7,6 +7,10 @@
     "dist",
     "src"
   ],
+  "repository": {
+    "url": "https://github.com/Camacaro/jcamacaro-product-card",
+    "type": "git"
+  },
   "engines": {
     "node": ">=10"
   },
@@ -60,5 +64,13 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
     "typescript": "^4.6.2"
-  }
+  },
+  "keywords": [
+    "product",
+    "card",
+    "react",
+    "tsdx",
+    "Jesus",
+    "Camacaro"
+  ]
 }
