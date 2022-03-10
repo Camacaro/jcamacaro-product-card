@@ -1,13 +1,7 @@
 import React, { createContext, useContext } from 'react';
 import { useProduct } from '../hooks/useProduct';
 import { ProductContextProps, ProductCardProps } from '../interfaces/interfaces';
-/**
- * Crearlo de este modo con "module"
- * hace que el componente sea unico y se puede
- * tener el mismo nombre de la clase pero con
- * diferentes estilos ya que no seran los mismos
- * react le agrega un hash a la clase unico
- */
+
 import styles from '../styles/styles.module.css';
 
 const ProductContext = createContext({} as ProductContextProps);
@@ -25,7 +19,8 @@ export const ProductCard = ({
   initialValues
 }: ProductCardProps) => {
 
-  const {counter, maxCount, isMaxCountReached, increaseBy, reset} = useProduct({ onChange, product, value, initialValues })
+  const {counter, maxCount, isMaxCountReached, increaseBy, reset} 
+    = useProduct({ onChange, product, value, initialValues })
 
   return (
     <Provider value={{
